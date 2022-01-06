@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    Instead of waiting for the results of
+	    a promise to resolve and handling it with a chain of then functions, async functions
+	    can be told to wait for the promise to resolve before further executing any code found
+	    in the function.
+	</article>
+	<br>
+	Code:
+	<pre><code>
+	const getFakePerson = async () => {
+	try {
+	let res = await fetch("https://api.randomuser.me/?nat=US&results=1");
+	let { results } = res.json();
+	console.log(results);
+	} catch (error) {
+	console.error(error);
+	}
+	};
+	getFakePerson();
+	</code></pre>
+	Output:
+	<pre><code>
+	</code></pre>
+	<script>
+	 const getFakePerson = async () => {
+	     try {
+		 let res = await fetch("https://api.randomuser.me/?nat=US&results=1");
+		 let { results } = res.json();
+		 console.log(results);
+	     } catch (error) {
+		 console.error(error);
+	     }
+	 };
+	 getFakePerson();
+	</script>
+    </body>
+</html>

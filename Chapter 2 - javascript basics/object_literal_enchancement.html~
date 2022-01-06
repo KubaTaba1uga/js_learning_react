@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    Object literal enhancement is the opposite of destructuring. It’s the process of restruc‐
+	    turing or putting the object back together. With object literal enhancement, we can
+	    grab variables from the global scope and add them to an object.
+	</article>
+	<script>
+	 let city_name = "Warsaw";
+	 let districts = ["wola", "ochota", "praga"];
+
+	</script>
+    </body>
+</html>

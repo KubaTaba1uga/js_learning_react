@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    When we log this, we see that there is a pending promise. Promises give us a way to
+	    make sense out of asynchronous behavior in JavaScript. The promise is an object that
+	    represents whether the async operation is pending, has been completed, or has failed.
+	    Think of this like the browser saying, “Hey, I’m going to try my best to go get this
+	    data. Either way, I’ll come back and let you know how it went.”
+	</article>
+	<br>
+	Code:
+	<pre><code>
+	console.log(fetch("https://api.randomuser.me/?nat=US&results=1"));
+	</code></pre>
+	Output:
+	<pre><code>
+	Promise { <state>: "pending" }
+	</code></pre>
+	<br>
+	<article>
+	    So back to the fetch result. The pending promise represents a state before the data
+	    has been fetched. We need to chain on a function called .then() . This function will
+	    take in a callback function that will run if the previous operation was successful. In
+	    other words, fetch some data, then do something else.
+	</article>
+	<br>
+	Code:
+	<pre><code>
+	</code></pre>
+	Output:
+	<pre><code>
+	</code></pre>
+	<br>
+	<article>
+	</article>
+	<br>
+	Code:
+	<pre><code>
+	</code></pre>
+	Output:
+	<pre><code>
+	</code></pre>
+	<script>
+	 console.log(fetch("https://api.randomuser.me/?nat=US&results=1"));
+
+	 fetch("https://api.randomuser.me/?nat=US&results=1").then(res =>
+	     console.log(res.json())
+	 );
+	</script>
+    </body>
+</html>

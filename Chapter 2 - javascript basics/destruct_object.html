@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    Destructuring assignment allows you to locally scope fields within an object and to
+	    declare which values will be used.
+	</article>
+	<br>
+	
+	Code:
+	<pre><Code>
+	const sandwich = {
+		bread: "dutch crunch",
+		meat: "tuna",
+		cheese: "swiss",
+		toppings: ["lettuce", "tomato", "mustard"]
+	};
+
+	const { bread, meat } = sandwich;
+
+	console.log(bread, meat);
+	</Code></pre>
+
+	Output:
+	<pre><Code>
+	dutch crunch tuna
+	</Code></pre>
+	    <script>
+	     const sandwich = {
+		 bread: "dutch crunch",
+		 meat: "tuna",
+		 cheese: "swiss",
+		 toppings: ["lettuce", "tomato", "mustard"]
+	     };
+
+	     const { bread, meat } = sandwich;
+
+	     console.log(bread, meat);
+
+	    </script>
+    </body>
+</html>

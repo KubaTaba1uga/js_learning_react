@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    Object literal enhancement is the opposite of destructuring. It’s the process of restruc‐
+	    turing or putting the object back together. With object literal enhancement, we can
+	    grab variables from the global scope and add them to an object.
+	</article>
+	<br>
+
+	Code:
+	<pre><Code>
+	 let city_name = "Warsaw";
+	 let districts = ["wola", "ochota", "praga"];
+	 
+	 let city = {city_name, districts};
+
+	 console.log(city);
+	</Code></pre>
+
+	Output:
+	<pre><Code>
+	Object { city_name: "Warsaw", districts: (3) […] }
+	</Code></pre>
+	
+	<br>
+	<article>
+	    We can also create object methods with object literal enhancement.
+	</article>
+	<br>
+
+	Code:
+	<pre><Code>
+
+	let city_name = "Warsaw";
+	let districts = ["wola", "ochota", "praga"];
+	let print = function(){
+	   console.log(`${this.city_name} districts are:\n${this.districts.join("\n")}`);
+	}
+
+	let city = {city_name, districts, print};
+
+	city.print()
+	</Code></pre>
+
+	Output:
+	<pre><Code>
+	Warsaw districts are:
+	wola
+	ochota
+	praga
+	</Code></pre>
+	    <script>
+	     let city_name = "Warsaw";
+	     let districts = ["wola", "ochota", "praga"];
+	     let print = function(){
+		 console.log(`${this.city_name} districts are:\n${this.districts.join("\n")}`);
+	     }
+
+	     let city = {city_name, districts, print};
+
+	     city.print()
+	    </script>
+
+    </body>
+</html>

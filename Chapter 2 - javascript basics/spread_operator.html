@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    The spread operator is three dots ( ... ) that perform several different tasks. First, the
+	    spread operator allows us to combine the contents of arrays.
+	</article>
+	<br>
+	Code:
+	<pre><code>
+	const peaks = ["Tallac", "Ralston", "Rose"];
+
+	const canyons = ["Ward", "Blackwood"];
+
+	const tahoe = [...peaks, ...canyons];
+
+	console.log(tahoe.join(", "));	
+	</code></pre>
+	Output:
+	<pre><code>
+	Tallac, Ralston, Rose, Ward, Blackwood
+	</code></pre>
+	<br>
+	<article>
+	    To copy content of array.
+	</article>
+	<br>
+	Code:
+	<pre><code>
+	const peaksCopy = [...peaks];
+	console.log(peaks.join(", "))
+	</code></pre>
+	Output:
+	<pre><code>
+	Tallac, Ralston, Rose
+	</code></pre>
+    	<br>
+
+	<article>
+	    The spread operator can also be used to get the remaining items in the array.
+	</article>
+	<br>
+	Code:
+	<pre><code>
+	 const [first, ...others] = peaks;
+	 console.log(others.join(", "))
+	</code></pre>
+	Output:
+	<pre><code>
+	Ralston, Rose
+	</code></pre>
+    	<br>
+
+	<article>
+	    We can also use the three-dot syntax to collect function arguments as an array. When
+	    used in a function, these are called rest parameters.
+	</article>
+	<br>
+	Code:
+	<pre><code>
+
+	 function print_args(...args) {
+		args.forEach(console.log);
+	 };
+
+	 print_args("Tallac", "Ralston", "Rose");
+
+	</code></pre>
+	Output:
+	<pre><code>
+
+	Tallac 0 Array(3) [ "Tallac", "Ralston", "Rose" ]
+
+	Ralston 1 Array(3) [ "Tallac", "Ralston", "Rose" ]
+
+	Rose 2 Array(3) [ "Tallac", "Ralston", "Rose" ]
+
+	</code></pre>
+    	
+	<script>
+	 const peaks = ["Tallac", "Ralston", "Rose"];
+	 const canyons = ["Ward", "Blackwood"];
+	 const tahoe = [...peaks, ...canyons];
+	 console.log(tahoe.join(", "));
+	 
+	 const peaksCopy = [...peaks];
+	 console.log(peaks.join(", "))
+
+	 const [first, ...others] = peaks;
+	 console.log(others.join(", "))
+
+	 function print_args(...args) {
+		args.forEach(console.log);
+	 };
+	 print_args("Tallac", "Ralston", "Rose");
+	</script>
+    </body>
+</html>
