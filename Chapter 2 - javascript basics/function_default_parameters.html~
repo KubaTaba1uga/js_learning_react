@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>Languages including C++ and Python allow developers to declare default values for
+	    function arguments. Default parameters are included in the ES6 spec, so in the event
+	    that a value is not provided for the argument, the default value will be used. 
+	</article>
+	<script>
+	 function logCompliment(firstName="John",lastName="Doe"){
+	     console.log("You're doing great! ${firstName} ${lastName}")
+	 };
+
+	 logCompliment();
+	</script>
+    </body>
+</html>
+

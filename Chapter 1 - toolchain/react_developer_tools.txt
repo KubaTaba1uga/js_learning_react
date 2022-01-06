@@ -1,0 +1,4 @@
+React developer tools are a browser extension,
+which makes react development easier.
+
+https://addons.mozilla.org/en-US/firefox/addon/react-devtools/

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>Template strings provide us with an alternative to string concatenation. They also
+	    allow us to insert variables into a string. You’ll hear these referred to as template
+	    strings, template literals, or string templates interchangeably.
+	    Traditional string concatenation uses plus signs to compose a string using variable
+	    values and strings:</article>
+    </body>
+</html>

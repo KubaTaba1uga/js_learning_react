@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Hello World</title>
+	</head>
+	<body>
+		<article>JavaScript now has lexical variable scope. In JavaScript, we create code blocks with
+curly braces ( {} ). In functions, these curly braces block off the scope of any variable
+declared with var . On the other hand, consider if/else statements. If you’re coming
+from other languages, you might assume that these blocks would also block variable
+scope. This was not the case until let came along.
+If a variable is created inside of an if/else block, that variable is not scoped to the
+block</article>
+Code:
+<pre><code>
+
+	var topic = "Global";
+	  
+	  if (topic) {
+	      var topic = "Block";
+
+	      console.log("block scope: topic = "+topic);
+
+	      }
+
+	  console.log("global scope: topic = "+topic);
+	  
+</code></pre>
+<h1> Output: </h1>
+<pre><code>
+	block scope: topic = Block
+	block scope: topic = Block
+</pre></code>
+	<script>
+	  var topic = "Global";
+	  
+	  if (topic) {
+	      var topic = "Block";
+
+	      console.log("block scope: topic = "+topic);
+
+	      }
+
+	  console.log("global scope: topic = "+topic);
+	  </script>
+	</body>
+</html>

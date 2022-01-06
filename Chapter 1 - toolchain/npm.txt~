@@ -1,0 +1,4 @@
+The Node package manager. In the JavaScript community,
+ engineers share open source code projects to avoid having
+to rewrite frameworks, libraries, or helper functions on their own.
+React itself is an example of a useful npm library.

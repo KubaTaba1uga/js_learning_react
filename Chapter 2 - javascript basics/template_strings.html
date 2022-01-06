@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>Template strings provide us with an alternative to string concatenation. They also
+	    allow us to insert variables into a string. You’ll hear these referred to as template
+	    strings, template literals, or string templates interchangeably.
+	    Traditional string concatenation uses plus signs to compose a string using variable
+	    values and strings:</article>
+
+	<pre><code>
+		console.log(lastName + ", " + firstName + " " + middleName);
+	</code></pre>
+
+	<article> With a template, we can create one string and insert the variable values by surround‐
+	    ing them with ${ } : </article>
+
+	<pre><code>
+		console.log(`${lastName}, ${firstName} ${middleName}`);
+	<pre><code>
+	
+	    <script>
+		let lastName = "Doe";
+		let firstName = "John";
+		let middleName  = "Eduardo";
+		console.log(`${lastName}, ${firstName} ${middleName}`);
+		console.log(lastName + ", " + firstName + " " + middleName);
+	    </script>
+    </body>
+</html>

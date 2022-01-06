@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    A function declaration or function definition starts with the function keyword,
+	    which is followed by the name of the function, logCompliment . The JavaScript state‐
+	    ments that are part of the function are defined between the curly braces.
+	</article>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+    </head>
+    <body>
+	<article>
+	    With arrow functions, you can create functions without using the function keyword and the return keyword.
+	</article>
+	<br>
+	Code:
+	<pre><code>
+		  let lordify = (firstName) => `lord ${firstName}`;
+		  // The same
+		  let lordify = (firstName) => {return `lord ${firstName}`};
+
+		   console.log(lordify("John"))
+	</code></pre>
+	Output:
+	<pre><code>
+		   lord John 
+	</code></pre>
+	    <script>
+	     let lordify = (firstName) => `lord ${firstName}`;
+	     // The same
+	     let lordify = (firstName) => {return `lord ${firstName}`};
+	     
+	     console.log(lordify("John"))
+	    </script>
+    </body>
+</html>
